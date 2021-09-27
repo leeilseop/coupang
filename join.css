@@ -1,0 +1,101 @@
+/* joinCss.css */
+
+/* 전체 박스 */
+#wrap{
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+#joinText{
+    position: relative;
+    overflow: hidden;
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    margin-bottom: 20px;
+}
+#Info{
+    padding: 20px 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #111;
+}
+#userId,
+#userPw,
+#userPwChk,
+#userName,
+#userPum{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#checkBox{
+   
+    padding:10px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+}   
+
+#ser{
+    border-top: 1px solid #f1f4f6;
+    color: #111;
+    width: 440px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 1.29;
+    text-align: left;
+}
+label{
+    font-size: 14px;
+}
+#allagree{
+    width: 100%;
+    max-width: 410px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+#join{
+    background-color: #0074e9;
+    color: #fff;
+    box-shadow: inset 0 -2px 0 rgb(0 0 0 / 38%);
+    padding: 16px 17px;
+    font-size: 17px;
+    line-height: 20px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+    margin-top: 15px;
+}
+#insert{
+    display: block;
+    position: relative;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color .25s ease;
+}

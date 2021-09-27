@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>로그인</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="headBox">
+            <h1><a href="https://www.coupang.com/"><img src="coupang.logo.png" alt="쿠팡 로고"></a></h1>
+        </header>
+      <div id="loginBox">
+        <div id="userId">
+        <label for="userid" id="insert"></label>
+          <input type="email" id="userid" value="" required placeholder="아이디(이메일)">
+         <p id="IdText" style="display: none;">아이디(이메일)을 입력해 주세요</p>
+         
+     
+    </div>  <!-- 아이디 입력  -->
+         
+    <div id="userPw">
+        <input type="password" id="userpw" value="" required placeholder="비밀번호">
+     <p id="PwText"  style="display: none;">비밀번호를 입력해 주세요</p>
+    </div>  <!-- 비밀번호 입력  -->
+      
+    </div>   <!-- 아이디 비밀번호 입력 박스  -->
+    </div> <!-- 아이디 입력  -->
+<div id="autoLogin">
+<label for="autologin" id="loginCheckBox">
+    <input type="checkbox" id="autologin" />
+    <span class="checkBoxLabel">자동로그인</span>
+</label>
+<a href="#" id="search">아이디(이메일)/비밀번호 찾기</a>
+</div>  <!--자동 로그인, 이메일(비밀번호)찾기 링크-->
+<div id="loginButton">
+    <button id="loginbutton">로그인</button>
+    <hr class="separator">
+
+</div>
+
+<a href="join.html" class="join">회원가입</a>  
+<footer>
+    <p>©Coupang Corp. All rights reserved.</p>  
+</footer>
+<script>
+  let idtext = document.getElementById("IdText");
+  let userid = document.getElementById("userid");
+
+  let pwtext = document.getElementById("PwText");
+  let userpw = document.getElementById("userpw");
+ $(this).click(function(){
+      if($('#userid').val()==""){
+    idtext.style.display="block";
+    userid.style.borderColor="red";
+    
+ }else{
+     idtext.style.display="none";
+     userid.style.borderColor="black";
+ }    
+ })
+ $(this).click(function(){
+     if($('#userpw').val()==''){
+    pwtext.style.display="block";
+    userpw.style.borderColor="red";
+     }else{
+         pwtext.style.display="none";
+         userpw.style.borderColor="black";
+     }
+ })
+
+
+   
+
+</script>
+</body>
+
+</html>

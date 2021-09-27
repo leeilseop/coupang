@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="join.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="join.css">
+
+
+  <title>회원가입</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1><a href="https://www.coupang.com/"><img src="coupang.logo.png" alt="쿠팡 로고"></a></h1>
+    </header>
+    <article id="joinText">
+      <div id="Info">회원정보를 입력해 주세요</div>
+      <div>
+        <input type="text" id="userId" required placeholder="아이디(이메일)" value="" name="userId">
+      </div>
+      <div>
+        <input type="text" id="userPw" required placeholder="비밀번호" value="" name="userPw">
+      </div>
+      <div>
+        <input type="text" id="userPwChk" required placeholder="비밀번호 확인" value="" name="userPwChk">
+      </div>
+      <div>
+        <input type="text" id="userName" required placeholder="이름" value="" name="userName">
+      </div>
+      <div>
+        <input type="text" id="userPum" required placeholder="휴대폰 번호" value="" name="userPum">
+      </div>
+    </article>
+    <section>
+      <div id="ser">
+        <h5 id="text1">쿠팡 서비스 약관에 동의해주세요.</h5>
+      </div>
+      <div id="allagree">
+        <input type="checkBox" id="agree0"> <label for="agree0">[선택] 모두 동의합니다.</label>
+      </div>
+      <div id="checkBox">
+        <div>
+          <input type="checkBox" id="agree1" class="agree"><label for="agree1"> [필수] 만 14세 이상입니다.</label>
+        </div>
+        <div>
+          <input type="checkBox" id="agree2" class="agree"><label for="agree2"> [필수] 쿠팡 이용약관 동의</label>
+        </div>
+        <div>
+          <input type="checkBox" id="agree3" class="agree"><label for="agree3"> [필수] 전자금융거래 이용약관 동의</label>
+        </div>
+        <div>
+          <input type="checkBox" id="agree4" class="agree"><label for="agree4"> [필수] 개인정보 수집 및 이용 동의</label>
+        </div>
+        <div>
+          <input type="checkBox" id="agree5" class="agree"><label for="agree5"> [필수] 개인정보 제공</label>
+        </div>
+      </div>
+      <div>
+        <button id="join">동의하고 가입하기</button>
+      </div>
+    </section>
+    <footer>
+      <h6>@Coupang Crop.All rights reserved.</h6>
+    </footer>
+  </div>
+  <script>
+    $("#agree0").on("click", function () {
+
+      // 체크박스 아이디 맞춰줘야함 ( agree1, agree2 ...)
+      if ($(this).prop("checked")) {
+
+        for (var i = 1, agreeLength = $(".agree").length; i <= agreeLength; i++) {
+          $("#agree" + i).prop("checked", true);
+        };
+
+      } else {
+
+        for (var i = 1, agreeLength = $(".agree").length; i <= agreeLength; i++) {
+          $("#agree" + i).prop("checked", false);
+        };
+
+      };
+
+    });
+
+
+
+    $(".agree").on("click", function () {
+
+      // 전체 갯수
+      var agreeLen = $("input.agree").length;
+
+      //체크 된 갯수
+      var agreeCheckLen = $("input.agree:checkbox:checked").length;
+
+      console.log("agreeCheckLen : " + agreeCheckLen);
+      console.log("agreeLen : " + agreeLen);
+
+      if (agreeCheckLen === agreeLen) {
+        $("#agree0").prop("checked", true);
+      } else {
+        $("#agree0").prop("checked", false);
+      };
+
+    });
+  </script>
+</body>
+
+</html>

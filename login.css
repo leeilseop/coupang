@@ -1,0 +1,129 @@
+#wrap{
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+   
+}
+#headBox{
+   margin: auto;
+}
+#loginBox{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+#userId,
+#userPw{
+    width: 100%;
+    height: 80px;
+}
+#userid,
+#userpw{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+}
+#autoLogin{
+    text-align: center;
+    font-size: 14px;
+}
+#loginCheckBox{
+    text-align: center;
+}
+
+#search{
+margin-left: 120px;
+text-decoration: none;
+color: #0073e9;
+font-size: 13px;
+line-height: 24px;
+}
+#autologin{
+    width: 24px;
+    height: 24px;
+}
+span{
+    user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+#loginbutton{
+    background-color: #0074e9;
+    color: #fff;
+    box-shadow: inset 0 -2px 0 rgb(0 0 0 / 38%);
+    padding: 16px 17px;
+    font-size: 17px;
+    line-height: 20px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 410px;
+    height: 50px;
+    margin: auto;
+}
+.separator{
+    display: block;
+    width: 400px;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-bottom: 4px;
+}
+hr{
+    border-style: inset;
+    border-width: 1px;  
+    box-sizing: content-box;
+}
+.join{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #0073e9;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    text-decoration: none;
+    padding: 16px 17px;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 410px;
+    height: 18px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+#IdText{
+   margin-right: 220px;
+    font-size: 13px;
+    margin-top: 0;
+    color: red;
+}
+#PwText{
+    margin-right: 250px;
+    font-size: 13px;
+    margin-top: 0;
+    color: red;
+}
+
+#IdText1{
+    text-align: left;
+    margin-left: 46px;
+     font-size: 13px;
+     margin-top: 0;
+     color: red;
+ }
+
